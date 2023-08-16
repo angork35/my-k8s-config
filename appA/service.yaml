@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: appA-service
+  namespace: appA-namespace
+spec:
+  selector:
+    app: appA
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
